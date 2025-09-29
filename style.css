@@ -1,0 +1,260 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+
+/* body {
+    /* background-image: url('outline-world-map.jpg'); */
+/* background-size: cover; */
+/* background-position: center center; */
+/* background-repeat: no-repeat; */
+/* height: 100vh;  */
+/* width: 100vw; */
+/* margin: 0;
+    padding: 0; */
+/* display: flex;   
+    flex-direction: column;
+} */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* or row */
+    /* center items horizontally */
+    /* center items vertically */
+    /* min-height: 10vh; */
+    /* flex-wrap: wrap;           /* allow items to wrap to next line */
+}
+
+h1 {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-size: clamp(2em, 18vw, 6em);
+    /* Responsive font size */
+    color: rgb(6, 43, 255);
+    -webkit-text-stroke: .02px black;
+    /* Crisp black outline */
+    text-shadow:
+        2px 2px 0 #000,
+        -2px 2px 0 #000,
+        2px -2px 0 #000,
+        -2px -2px 0 #000;
+    margin-top: .1px;
+    white-space: nowrap;
+}
+
+#popup {
+    font-family: 'arial', sans-serif;
+    font-size: 1.1em;
+    color: #222;
+    line-height: 1.5;
+}
+
+#popup-content strong {
+    color: #007239;
+    outline-color: #1c07ff;
+    outline-width: .5px;
+    font-size: 1.1em;
+}
+
+#star-btn {
+    position: fixed;
+    top: 10%;
+    right: 90px;
+    transform: translateY(-10%);
+    font-size: clamp(2em, 18vw, 12em);
+    color: rgb(255, 234, 9);
+    background: none;
+    border: none;
+    cursor: pointer;
+    filter: drop-shadow(1px 1px 1px #333);
+    z-index: 2000;
+    transition: transform 0.2s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.star-label {
+    font-size: 0.09em;
+    /* Adjust size as needed */
+    color: #555555;
+    /* Or any color you like */
+    font-weight: bold;
+    margin-top: -8.5em;
+    /* Pull text closer to star if needed */
+    letter-spacing: 0.02em;
+    text-shadow: 1px 1px 2px #fff, 0 0 2px #000;
+    pointer-events: none;
+    /* So only the button itself is clickable */
+}
+
+#star-btn:hover {
+    transform: translateY(-20%) scale(1.1) rotate(-10deg);
+    color: rgb(243, 255, 5);
+}
+
+#calendar-popup {
+    display: none;
+    position: fixed;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    color: black;
+    padding: 24px;
+    border-radius: 14px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.3);
+    z-index: 3000;
+    min-width: 340px;
+    background:linear-gradient(#e2fb01, #ffcd04); 
+    /* Change this to any color you like */
+}
+
+
+.scrolling-text {
+    display: inline-block;
+    white-space: nowrap;
+    animation: scroll-left 12s linear infinite;
+    /* padding-left: 10%; Start off-screen */
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+
+    /* button options */
+}
+
+/* #logo {
+    position: fixed;
+    bottom: 24px;
+    left: 24px;
+    width: 300px;
+    /* Adjust size as needed */
+    /* height: auto;
+    z-index: 3000;
+    pointer-events: none; */
+    /* Optional: so it doesn't block clicks */
+/* } */ 
+
+#logo-container {
+    position: fixed;
+    bottom: 24px;
+    left: 24px;
+    z-index: 3000;
+    display: flex;
+    flex-direction: row;
+    /* Side by side */
+    align-items: flex-end;
+    /* Align bottoms */
+}
+
+#logo {
+    width: 300px;
+    height: auto;
+    pointer-events: auto;
+    cursor: pointer;
+}
+
+#logo-tooltip {
+    display: none;
+    max-width: 500px;
+    background: linear-gradient(45deg, rgba(220, 164, 246, 0.97), #7471faf7);
+    color: #222;
+    font-size: .9em;
+    padding: 18px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.18);
+    margin-left: 18px;
+    /* Space between logo and tooltip */
+    line-height: 1.5;
+    font-family: Arial, Helvetica, sans-serif;
+    white-space: normal;
+    outline-style: solid;
+    outline-color: gray;
+    outline-width: 1.5px;
+    position: static;
+    /* Not relative or absolute */
+}
+
+#logo-container:hover #logo-tooltip,
+#logo:focus+#logo-tooltip {
+    display: block;
+}
+
+#logo-tooltip::before {
+    content: "";
+    position: absolute;
+    left: -16px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 16px solid rgba(255, 255, 255, 0.97);
+}
+
+/* immer icon donate to the cause */
+/* #icon-container {
+    position: fixed;
+    bottom: 24px;
+    right: 50px;
+    z-index: 3000;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+#icon {
+    width: 80px; /* Adjust size as needed */
+    /* height: auto;
+    pointer-events: auto;
+    cursor: pointer;
+} */
+
+/* #icon-tooltip {
+    display: none;
+    max-width: 200px;
+    background: linear-gradient(45deg, #fc6b42, #f101e9);
+    color: #222;
+    font-size: 1em;
+    padding: 12px 16px;
+    border-radius: 10px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+    margin-right: 14px;
+    line-height: 1.4;
+    font-family: Arial, Helvetica, sans-serif;
+    white-space: normal;
+    outline: 1px solid #e6c200;
+} */
+
+/* #icon-container:hover #icon-tooltip,
+#icon:focus + #icon-tooltip {
+    display: block;
+}
+@keyframes swivel {
+    0%   { transform: rotate(-20deg);}
+    50%  { transform: rotate(20deg);}
+    100% { transform: rotate(-20deg);}
+}
+
+#icon {
+    animation: swivel 1s ease-in-out infinite;
+} */ 
+/* OLD CODE FROM PREVIOUS FORMATS */

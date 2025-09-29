@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script src="https://cdn.jsdelivr.net/npm/p5@1.11.10/lib/p5.js"></script>
+<meta charset="UTF-8">
+<title>*W*Y*A* TELEPORT SERVICE</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<button id="star-btn" title="Special Star">
+ ★
+<span class="star-label">BOOK NOW!</span>
+</button>
+
+<!-- positive feedback loop icon (kickstarter page)
+ <div id="icon-container">
+  <div id="icon-tooltip">Livestream Event @ CCT</div>
+<img id="icon" src="immer_web.png" alt="positive feedback loop">
+</div> -->
+
+<div id="calendar-popup">
+<span id="calendar-popup-close"
+style="position:absolute; top:8px; right:16px; cursor:pointer; font-size:1.5em;">&times;</span>
+<form id="calendar-form">
+<label>Your Email:<br><input type="email" id="your-email" required></label><br><br>
+<label>Friend's Email:<br><input type="email" id="friend-email" required></label><br><br>
+<label>Date & Time:<br><input type="datetime-local" id="meeting-datetime" required></label><br><br>
+<label>Livestream URL:<br>
+<select id="livestream-url" required>
+<option value="">Select a livestream</option>
+</select>
+</label><br><br>
+<button type="submit">Create Calendar Invite</button>
+</form>
+<div id="calendar-link" style="margin-top:16px;"></div>
+</div>
+
+<div id="logo-container">
+<img id="logo" src="arressai-logo.png" alt="Arressai Logo">
+<div id="logo-tooltip">
+ Mundane moments together are missed most when your loved ones aren't close.
+ Whether you are emmigrating for a better life, for safety, travelling, or in different time zones from those you
+ want to spend some time with, this project is an effort to use technology to help us remain connected.
+ You can set a date to meet up with your friend's at the beach or plan a vacation somewhere new, or just watch the
+ same sunset, sharing the same view.
+</div>
+</div>
+
+<h1 class="scrolling-text">TECHCONNECT&nbsp;&nbsp;TECHCONNECT&nbsp;&nbsp;TECHCONNECT&nbsp;&nbsp;TECHCONNECT</h1>
+
+<div id="popup"
+style="display:none; position:fixed; top:10%; left:50%; transform:translateX(-50%); background:white; color:black; padding:20px; border-radius:12px; box-shadow:0 4px 24px rgba(0,0,0,0.3); z-index:1000; min-width:320px;">
+<span id="popup-close"
+style="position:absolute; top:8px; right:16px; cursor:pointer; font-size:1.5em;">&times;</span>
+<div id="popup-content"></div>
+</div>
+
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

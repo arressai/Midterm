@@ -1,0 +1,155 @@
+[
+  {
+    "id": "HongKong",
+    "name": "Main Street Traffic Cam",
+    "location": "Main Street & Elm Avenue",
+    "stream_url": "https://youtu.be/vlINsdjDN28",
+    "canvas_location": "width/1.272,height/2.14",
+    "x": 1.272,
+    "y": 2.14
+  },
+  {
+    "id": "Namibia",
+    "name": "Erongo",
+    "location": "Swakopmund Jetty",
+    "stream_url": "https://youtu.be/MiqjRqyla70",
+    "canvas_location": "width/2,height/1.404",
+    "x": 2.0,
+    "y": 1.404
+  },
+  {
+    "id": "Tokyo1",
+    "name": "Waterfront Cityscape",
+    "location": "Minato City",
+    "stream_url": "https://youtu.be/_k-5U7IeK8g",
+    "canvas_location": "width/1.190,height/2.503",
+    "x": 1.19,
+    "y": 2.503
+  },
+  {
+    "id": "Brazil",
+    "name": "Santos Bay",
+    "location": "Porto de Santos",
+    "stream_url": "https://youtu.be/AX74XKJZdJM",
+    "canvas_location": "width/2.883,height/1.437",
+    "x": 2.883,
+    "y": 1.437
+  },
+  {
+    "id": "South Africa",
+    "name": "Kruger Olifants",
+    "location": "Kruger Park",
+    "stream_url": "https://youtu.be/lQ4GP-DCvFk",
+    "canvas_location": "width/1.823,height/1.385",
+    "x": 1.823,
+    "y": 1.385
+  },
+  {
+    "id": "Spain",
+    "name": "L'Albir",
+    "location": "Alicante",
+    "stream_url": "https://youtu.be/Sa-pwJzlYjI",
+    "canvas_location": "width/2.15,height/2.73",
+    "x": 2.15,
+    "y": 2.73
+  },
+  {
+    "id": "Los Angeles",
+    "name": "Venice",
+    "location": "Venice Beach",
+    "stream_url": "https://youtu.be/3LXQWU67Ufk",
+    "canvas_location": "width/7.53,height/2.48",
+    "x": 7.53,
+    "y": 2.48
+  },
+  {
+    "id": "Finland",
+    "name": "Pori",
+    "location": "Yyteri Beach",
+    "stream_url": "https://youtu.be/Xhk8H-pb9i8",
+    "canvas_location": "width/1.941,height/3.817",
+    "x": 1.941,
+    "y": 3.817
+  },
+  {
+    "id": "New York",
+    "name": "Lower Manhattan",
+    "location": "Lower East Side",
+    "stream_url": "https://youtu.be/D9O8TMFPGPg",
+    "canvas_location": "width/3.772,height/2.677",
+    "x": 3.772,
+    "y": 2.677
+  },
+  {
+    "id": "United Kingdom",
+    "name": "Kirby Beach",
+    "location": "Merseyside",
+    "stream_url": "https://youtu.be/MRu9sio6uHw",
+    "canvas_location": "width/2.197,height/3.286",
+    "x": 2.197,
+    "y": 3.286
+  },
+  {
+    "id": "Canada",
+    "name": "Vancouver",
+    "location": "British Columbia",
+    "stream_url": "https://youtu.be/cuwCwfY0T3s",
+    "canvas_location": "width/6.689,height/3.104",
+    "x": 6.689,
+    "y": 3.104
+  },
+  {
+    "id": "Madeira",
+    "name": "Portugal",
+    "location": "Paul do Mar",
+    "stream_url": "https://youtu.be/1mUJWRFaA4I",
+    "canvas_location": "width/2.465,height/2.483",
+    "x": 2.465,
+    "y": 2.483
+  },
+  {
+    "id": "Taiwan",
+    "name": "Yilan County",
+    "location": "Nanfang'ao",
+    "stream_url": "https://youtu.be/_u7baK7ct2M",
+    "canvas_location": "width/1.241,height/2.141",
+    "x": 1.241,
+    "y": 2.141
+  },
+  {
+    "id": "New Mexico",
+    "name": "Las Vegas",
+    "location": "Bridge Street",
+    "stream_url": "https://youtu.be/sw8MuxrKcs8",
+    "canvas_location": "width/6.689,height/2.482",
+    "x": 6.689,
+    "y": 2.482
+  },
+  {
+    "id": "Washington DC",
+    "name": "Axis Communications",
+    "location": "Historical Area",
+    "stream_url": "https://youtu.be/1wV9lLe14aU",
+    "canvas_location": "width/4.025,height/2.582",
+    "x": 4.025,
+    "y": 2.582
+  },
+  {
+    "id": "Thailand",
+    "name": "Koh Samui",
+    "location": "FitKoh Gym",
+    "stream_url": "https://youtu.be/byuqUyqBZdY",
+    "canvas_location": "width/1.33,height/2.065",
+    "x": 1.33,
+    "y": 2.065
+  },
+  {
+    "id": "Venice",
+    "name": "Grand Canal",
+    "location": "Trattoria Povoledo",
+    "stream_url": "https://youtu.be/P6JA_YjHMZs",
+    "canvas_location": "width/2.017,height/2.851",
+    "x": 2.017,
+    "y": 2.851
+  }
+]
